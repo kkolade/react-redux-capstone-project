@@ -6,3 +6,4 @@ export const store = configureStore({
     companiesDetails: companiesDetailsReducer,
   },
 });
+console.log(store);

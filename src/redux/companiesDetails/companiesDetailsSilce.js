@@ -33,16 +33,19 @@ export const companiesDetailsSlice = createSlice({
     });
 
     builder.addCase(fetchCompaniesDetails.fulfilled, (state, action) => {
-      const books = Object.keys(action.payload.data).map((key) => {
-        const book = action.payload.data[key][0];
+      const companies = Object.keys(action.payload.data).map((key) => {
+        const company = action.payload.data[key];
+        console.log(company);
 
         return {
           id: key,
-          ...book,
+          ...company,
         };
       });
       state.isLoading = false;
-      state.books = books;
+      state.error = false;
+      state.companies = companies;
+      console.log(state.companies);
     });
 
     builder.addCase(fetchCompaniesDetails.rejected, (state, action) => {
