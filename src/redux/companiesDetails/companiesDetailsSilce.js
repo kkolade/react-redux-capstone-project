@@ -28,6 +28,10 @@ export const companiesDetailsSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
+    builder.addCase(fetchCompaniesDetails.pending, (state) => {
+      state.isLoading = true;
+    });
+
     builder.addCase(fetchCompaniesDetails.fulfilled, (state, action) => {
       const books = Object.keys(action.payload.data).map((key) => {
         const book = action.payload.data[key][0];
@@ -41,8 +45,9 @@ export const companiesDetailsSlice = createSlice({
       state.books = books;
     });
 
-    builder.addCase(fetchCompaniesDetails.pending, (state) => {
-      state.isLoading = true;
+    builder.addCase(fetchCompaniesDetails.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.error.message;
     });
   },
 });
