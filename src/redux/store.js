@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import companiesDetailsReducer from './companiesDetails/companiesDetailsSilce';
+import companiesDetailsReducer from './companiesDetails/companiesDetailsSlice';
 
 export const store = configureStore({
   reducer: {
     companiesDetails: companiesDetailsReducer,
   },
 });
-console.log(store);

@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+
 import axios from 'axios';
 
 const baseURL =
@@ -17,7 +18,8 @@ export const fetchCompaniesDetails = createAsyncThunk(
 );
 
 const initialState = {
-  companies: [],
+  companies: {},
+  company: {},
   isLoading: false,
   isSuccessful: false,
   error: null,
@@ -35,7 +37,6 @@ export const companiesDetailsSlice = createSlice({
     builder.addCase(fetchCompaniesDetails.fulfilled, (state, action) => {
       const companies = Object.keys(action.payload.data).map((key) => {
         const company = action.payload.data[key];
-        console.log(company);
 
         return {
           id: key,

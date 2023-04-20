@@ -1,49 +1,36 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchCompaniesDetails } from '../redux/companiesDetails/companiesDetailsSilce';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import cardHeaderImg from '../assets/images/buildings.png';
+import './Home.css';
 import Search from './Search';
 
 const Home = () => {
-  const dispatch = useDispatch();
   const companies = useSelector((state) => state.companiesDetails.companies);
   const isLoading = useSelector((state) => state.companiesDetails.isLoading);
-  const error = useSelector((state) => state.companiesDetails.error);
-
-  useEffect(() => {
-    dispatch(fetchCompaniesDetails());
-  }, [dispatch]);
 
   if (isLoading) {
     return (
-      <>
-        <p>loading...</p>
+      <div className="center-items">
         <div className="Home-preloader" />
-      </>
-    );
-  }
-
-  if (error) {
-    return (
-      <>
-        <p>unable to load the Rockets...</p>
-        <p>
-          Error:
-          {error}
-        </p>
-      </>
+      </div>
     );
   }
 
   return (
-    <div>
+    <div className="Home">
       <Search />
-      <div>
+      <div className="Home-companies center-items">
         {companies.map((company) => (
-          <div key={company.id}>
-            <div>
-              <h2>{company.name}</h2>
-              <p>{company.sector}</p>
+          <div key={company.id} className="Home-company-card">
+            <div className="Home-company-card-header">
+              <img
+                src={cardHeaderImg}
+                alt="buildings"
+                className="Home-card-image"
+              />
             </div>
+            <h3>{company.name}</h3>
+            <p>{company.sector}</p>
           </div>
         ))}
       </div>

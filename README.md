@@ -179,3 +179,7 @@ I would like to thank Microverse for the opportunity to learn and grow
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+Attribution:
+company card header:
+Image by <a href="https://pixabay.com/users/zzzvector-244319/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4052951">zzzvector</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4052951">Pixabay</a>

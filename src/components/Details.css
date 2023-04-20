@@ -1,0 +1,13 @@
+.Details {
+  height: 590px;
+}
+
+.Details-company {
+  width: 290px;
+  height: 478px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: #fff;
+}
