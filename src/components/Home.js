@@ -21,11 +21,15 @@ const Home = () => {
       <Search />
       <div className="Home-companies center-items">
         {companies.map((company) => (
-          <div key={company.id} className="Home-company-card">
+          <div key={company.cik} className="Home-company-card">
             <div className="Home-company-card-header">
               <img
                 src={cardHeaderImg}
                 alt="buildings"
+                style={{
+                  borderTopLeftRadius: '10px',
+                  borderTopRightRadius: '10px',
+                }}
                 className="Home-card-image"
               />
             </div>

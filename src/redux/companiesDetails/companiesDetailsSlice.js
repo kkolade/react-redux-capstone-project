@@ -2,20 +2,26 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import axios from 'axios';
 
-const baseURL =
+const companiesURL =
   'https://financialmodelingprep.com/api/v3/nasdaq_constituent?apikey=';
-const API_KEY = '034d6ca383d79d7eecc8e5b037506452';
+const companyURL = 'https://financialmodelingprep.com/api/v3/profile/';
+// const API_KEY = '034d6ca383d79d7eecc8e5b037506452';
+const API_KEY = '55b862a869deb41e6274437272a2c936';
 
 export const fetchCompaniesDetails = createAsyncThunk(
-  'books/fetchCompaniesDetails/',
+  'companies/fetchCompaniesDetails/',
   async () => {
     try {
-      return axios.get(`${baseURL}${API_KEY}`);
+      return axios.get(`${companiesURL}${API_KEY}`);
     } catch (error) {
       return error;
     }
   }
 );
+
+export const fetchCompanyDetails = createAsyncThunk(async (args) => {
+  return axios.get(`${companyURL}${args}?apikey=${API_KEY}`);
+});
 
 const initialState = {
   companies: {},
@@ -46,14 +52,18 @@ export const companiesDetailsSlice = createSlice({
       state.isLoading = false;
       state.error = false;
       state.companies = companies;
-      console.log(state.companies);
     });
 
     builder.addCase(fetchCompaniesDetails.rejected, (state, action) => {
       state.isLoading = false;
       state.error = action.error.message;
     });
+
+    builder.addCase(fetchCompanyDetails.fulfilled, (state, action) => {
+      state.company = action.payload;
+    });
   },
 });
+
 
 export default companiesDetailsSlice.reducer;

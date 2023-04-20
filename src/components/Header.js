@@ -45,9 +45,7 @@ const Header = () => {
                 style={({ isActive }) => ({
                   display: isActive ? 'none' : 'block',
                 })}
-              >
-                Company List
-              </NavLink>
+              ></NavLink>
             </li>
             <li>
               <NavLink

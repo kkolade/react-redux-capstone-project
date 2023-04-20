@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  background-color: #fff;
+  background-color: #d8d4d4;
 }
 
 .Home-company-card {
@@ -31,6 +31,7 @@
 
 .Home-company-card:hover {
   transform: scale(1.01) translateY(-1px);
+  background-color: #c5a3d2;
 }
 
 .Home-company-card:active {
