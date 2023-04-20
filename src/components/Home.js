@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import cardHeaderImg from '../assets/images/buildings.png';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
+import HomePageItems from './HomePageItems';
 import Search from './Search';
 
 const Home = () => {
+  const [data, setData] = useState('');
+  const navigate = useNavigate();
   const companies = useSelector((state) => state.companiesDetails.companies);
   const isLoading = useSelector((state) => state.companiesDetails.isLoading);
 
   if (isLoading) {
     return (
-      <div className="center-items">
+      <div className="Home-companies center-items">
         <div className="Home-preloader" />
       </div>
     );
@@ -18,25 +21,26 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <Search />
+      <Search data={data} setData={setData} />
       <div className="Home-companies center-items">
-        {companies.map((company) => (
-          <div key={company.cik} className="Home-company-card">
-            <div className="Home-company-card-header">
-              <img
-                src={cardHeaderImg}
-                alt="buildings"
-                style={{
-                  borderTopLeftRadius: '10px',
-                  borderTopRightRadius: '10px',
-                }}
-                className="Home-card-image"
-              />
+        {companies
+          .filter((company) => {
+            if (data === '') {
+              return company;
+            }
+            if (company.name.toLowerCase().includes(data.toLowerCase())) {
+              return company;
+            }
+            return null;
+          })
+          .map((company) => (
+            <div
+              key={company.id}
+              onClick={() => navigate(`/details/${company.symbol}`)}
+            >
+              <HomePageItems name={company.name} symbol={company.symbol} />
             </div>
-            <h3>{company.name}</h3>
-            <p>{company.sector}</p>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );

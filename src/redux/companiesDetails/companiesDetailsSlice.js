@@ -19,9 +19,13 @@ export const fetchCompaniesDetails = createAsyncThunk(
   }
 );
 
-export const fetchCompanyDetails = createAsyncThunk(async (args) => {
-  return axios.get(`${companyURL}${args}?apikey=${API_KEY}`);
-});
+export const fetchCompanyDetails = createAsyncThunk(
+  'companies/fetchCompanyDetails',
+  async (args) => {
+    const response = await axios.get(`${companyURL}${args}?apikey=${API_KEY}`);
+    return response.data[0];
+  }
+);
 
 const initialState = {
   companies: {},

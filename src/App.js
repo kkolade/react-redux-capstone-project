@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Details from './components/Details';
 import Header from './components/Header';
@@ -16,13 +16,13 @@ function App() {
         backgroundPositionX: 'center',
       }}
     >
-      <BrowserRouter>
+      <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/details" element={<Details />} />
+          <Route path="/details/:smbl" element={<Details />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

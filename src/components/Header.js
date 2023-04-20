@@ -33,30 +33,15 @@ const Header = () => {
             <div className="Header-title">
               <h4>
                 <BiChevronLeft />
-                Home
               </h4>
             </div>
           </NavLink>
           <ul className="Header-list">
             <li>
-              <NavLink
-                to="/"
-                activeclassname="active-link"
-                style={({ isActive }) => ({
-                  display: isActive ? 'none' : 'block',
-                })}
-              ></NavLink>
+              <NavLink to="/"></NavLink>
             </li>
             <li>
-              <NavLink
-                to="/details"
-                activeclassname="active-link"
-                style={({ isActive }) => ({
-                  display: isActive ? 'none' : 'block',
-                })}
-              >
-                Company Details
-              </NavLink>
+              <NavLink to="/details"></NavLink>
             </li>
           </ul>
           <div className="Header-nav-icons">
