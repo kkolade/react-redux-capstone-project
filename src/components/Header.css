@@ -52,10 +52,10 @@
 
 .Header-title {
   color: #fff;
-  background-color: #8e44ad;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 3px;
+  /* padding-bottom: 2px; */
+  font-size: 0.95rem;
 }
 
 

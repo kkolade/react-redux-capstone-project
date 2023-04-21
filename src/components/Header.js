@@ -32,7 +32,7 @@ const Header = () => {
           <NavLink to="/">
             <div className="Header-title">
               <h4>
-                <BiChevronLeft />
+                <BiChevronLeft style={{ BiFontSize: '1rem' }} />
               </h4>
             </div>
           </NavLink>
@@ -44,13 +44,13 @@ const Header = () => {
               <NavLink to="/details"></NavLink>
             </li>
           </ul>
+          <span className="Header-title">Details of American Companies</span>
           <div className="Header-nav-icons">
             <BiMicrophone />
             <BiCog />
           </div>
         </nav>
       </div>
-      <h5 className="Header-title">Details of American Companies</h5>
     </header>
   );
 };
