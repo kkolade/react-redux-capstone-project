@@ -50,4 +50,12 @@
   color: #fff;
 }
 
+.Header-title {
+  color: #fff;
+  background-color: #8e44ad;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+
 
