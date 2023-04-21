@@ -2,8 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import axios from 'axios';
 
-const companiesURL =
-  'https://financialmodelingprep.com/api/v3/nasdaq_constituent?apikey=';
+const companiesURL = 'https://financialmodelingprep.com/api/v3/nasdaq_constituent?apikey=';
 const companyURL = 'https://financialmodelingprep.com/api/v3/profile/';
 const API_KEY = '034d6ca383d79d7eecc8e5b037506452';
 
@@ -15,7 +14,7 @@ export const fetchCompaniesDetails = createAsyncThunk(
     } catch (error) {
       return error;
     }
-  }
+  },
 );
 
 export const fetchCompanyDetails = createAsyncThunk(
@@ -23,7 +22,7 @@ export const fetchCompanyDetails = createAsyncThunk(
   async (args) => {
     const response = await axios.get(`${companyURL}${args}?apikey=${API_KEY}`);
     return response.data[0];
-  }
+  },
 );
 
 const initialState = {
@@ -67,6 +66,5 @@ export const companiesDetailsSlice = createSlice({
     });
   },
 });
-
 
 export default companiesDetailsSlice.reducer;

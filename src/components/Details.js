@@ -20,7 +20,11 @@ const Details = () => {
           alt="company logo"
           className="Details-company-logo"
         />
-        <p>({company?.symbol})</p>
+        <p>
+          (
+          {company?.symbol}
+          )
+        </p>
         <h2>{company?.companyName}</h2>
         <table>
           <tbody>

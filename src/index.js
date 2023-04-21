@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import './index.css';
 import { fetchCompaniesDetails } from './redux/companiesDetails/companiesDetailsSlice';
-import { store } from './redux/store';
+import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 store.dispatch(fetchCompaniesDetails());
@@ -14,6 +14,5 @@ root.render(
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
-

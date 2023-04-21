@@ -4,7 +4,7 @@
 
 .Home-companies {
   height: 432px;
-  overflow-y:scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   box-sizing: border-box;
   padding: 5px;
@@ -22,7 +22,7 @@
   background-color: #d0bad9;
   color: #fff;
   text-align: center;
-  border:  1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   cursor: pointer;

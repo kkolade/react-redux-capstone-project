@@ -1,7 +1,6 @@
 .Search {
   height: 30px;
   margin-top: 0;
-  padding-left: 56;
   margin-left: auto;
   margin-right: auto;
   background-color: #9b66b0;
@@ -13,4 +12,3 @@
 .Search-input {
   width: 200px;
 }
-
