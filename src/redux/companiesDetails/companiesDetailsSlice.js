@@ -5,8 +5,7 @@ import axios from 'axios';
 const companiesURL =
   'https://financialmodelingprep.com/api/v3/nasdaq_constituent?apikey=';
 const companyURL = 'https://financialmodelingprep.com/api/v3/profile/';
-// const API_KEY = '034d6ca383d79d7eecc8e5b037506452';
-const API_KEY = '55b862a869deb41e6274437272a2c936';
+const API_KEY = '034d6ca383d79d7eecc8e5b037506452';
 
 export const fetchCompaniesDetails = createAsyncThunk(
   'companies/fetchCompaniesDetails/',
