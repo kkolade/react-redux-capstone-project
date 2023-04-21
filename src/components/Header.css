@@ -1,9 +1,9 @@
 .Header {
-  margin: 0 auto;
+  /* margin: 0 auto;
   padding-top: 80px;
   width: 293px;
-  ;
-}
+  ; */
+} 
 
 .Header-navbar {
   background-color: #8e44ad;
@@ -50,12 +50,16 @@
   color: #fff;
 }
 
+.Header-chevron {
+  font-size: 2rem;
+}
+
 .Header-title {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  /* padding-bottom: 2px; */
+  
   font-size: 0.95rem;
-}
+} 
 
 

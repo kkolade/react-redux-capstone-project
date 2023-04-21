@@ -32,7 +32,7 @@ const Header = () => {
           <NavLink to="/">
             <div className="Header-title">
               <h4>
-                <BiChevronLeft style={{ BiFontSize: '1rem' }} />
+                <BiChevronLeft className="Header-chevron" />
               </h4>
             </div>
           </NavLink>

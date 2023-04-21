@@ -16,13 +16,15 @@ function App() {
         backgroundPositionX: 'center',
       }}
     >
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/details/:smbl" element={<Details />} />
-        </Routes>
-      </Router>
+      <div className="App-container">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/details/:smbl" element={<Details />} />
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }

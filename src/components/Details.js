@@ -13,12 +13,16 @@ const Details = () => {
   }, [dispatch]);
 
   return (
-    <div className="parent">
-      <div className="items">
-        <img src={company?.image} alt="company logo" />
+    <div className="Details">
+      <div className="Details-card-content">
+        <img
+          src={company?.image}
+          alt="company logo"
+          className="Details-company-logo"
+        />
         <p>({company?.symbol})</p>
-        <h1>{company?.companyName}</h1>
-        <table className="table">
+        <h2>{company?.companyName}</h2>
+        <table>
           <tbody>
             <tr>
               <th scope="col">CEO</th>

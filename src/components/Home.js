@@ -13,7 +13,7 @@ const Home = () => {
 
   if (isLoading) {
     return (
-      <div className="Home-companies center-items">
+      <div className="Home-companies">
         <div className="Home-preloader" />
       </div>
     );
@@ -21,9 +21,8 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <Search data={data} setData={setData} />
-      <div className="Home-companies center-items">
-        ``
+      <Search data={data} setData={setData} className />
+      <div className="Home-companies">
         {companies
           .filter((company) => {
             if (data === '') {
@@ -36,6 +35,7 @@ const Home = () => {
           })
           .map((company) => (
             <div
+              className="Home-card-container"
               key={company.id}
               onClick={() => navigate(`/details/${company.symbol}`)}
             >

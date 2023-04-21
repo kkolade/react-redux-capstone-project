@@ -1,14 +1,13 @@
 .App {
-  background-color: beige;
+  background-color: #d6d6d6;
+  padding-top: 83px;
+  padding-bottom: 110px;
 }
 
-/* .center-items { 
-  width: 290px;
-  height: 590px;
-  overflow-y:scroll;
-  box-sizing: border-box;
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px; 
-} */
+.App-container {
+  width: 292px;
+  height: 513px;
+  margin: 0px auto;
+
+}
+
