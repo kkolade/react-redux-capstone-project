@@ -50,6 +50,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
+      <h5>Details of American Companies</h5>
     </header>
   );
 };

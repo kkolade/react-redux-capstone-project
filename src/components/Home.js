@@ -23,6 +23,7 @@ const Home = () => {
     <div className="Home">
       <Search data={data} setData={setData} />
       <div className="Home-companies center-items">
+        ``
         {companies
           .filter((company) => {
             if (data === '') {

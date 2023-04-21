@@ -24,9 +24,21 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 The Bookstore React App <a name="about-project"></a>
+# 📖 American Companies <a name="about-project"></a>
 
-**The Bookstore React App** is a SPA project I'll be creating using React.
+**American Company** is a SPA project built using React and ancillary technologies. It is the Capstome project for the Microverse React Redux module. I s built to with the following in mind:
+
+- Use React documentation.
+- Use React components.
+- Use React props.
+- Use React Router.
+- Connect React and Redux.
+- Handle events in a React app.
+- Write integration tests with a React testing library.
+- Use styles in a React app.
+- Use React life cycle methods.
+- Apply React best practices and language style guides in code.
+- Use store, actions and reducers in React.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,9 +48,11 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Redux</a></li>
+    <li><a href="https://reactjs.org/">React- Router</a></li></a></li>
     <li><a href="https://reactjs.org/">Webpack</a></li>
-    <li><a href="https://reactjs.org/">React Router</a></li>
-    <li><a href="https://reactjs.org/">Babel</a></li>
+    <li><a href="https://reactjs.org/">Jest</a></li>
+    <li><a href="https://reactjs.org/">React Testing Library</a></li>
   </ul>
 </details>
 
@@ -47,7 +61,9 @@
 ### Key Features <a name="key-features"></a>
 
 - **A single page app built with React**
-- **Ability to route between multiple pges**
+- **Using Redux for state management**
+- **Using React router for routing**
+- **Using Redux Middleware**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -55,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live demo](https://mindhub-bookstore.onrender.com/)
+- [Live demo link will be made available as soon as it is available]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +98,7 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<pre>git clone git@github.com:kkolade/math-magician.git</pre>
+<pre>git clone git@github.com:kkolade/react-redux-capstone-project.git</pre>
 <!--
 Example commands:
 
@@ -96,14 +112,14 @@ Example commands:
 
 Install this project with:
 
-<!--
-Example command:
+command:
 
 ```sh
-  cd my-project
-  gem install
+  cd react-redux-capstone-project
+  npm install
 ```
---->
+
+-
 
 ### Usage
 
@@ -141,7 +157,8 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add dark/liight theme**
+- [ ] **Make the App front-end responsive**
+- [ ] **Build a desktop and tablet version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,6 +186,8 @@ If you like this project please [buy me coffee](
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for the opportunity to learn and grow
+[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on [Behance](https://www.behance.net/) for the design template
+[zzzvector](https://pixabay.com/users/zzzvector-244319/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4052951) on [Pixabay](https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4052951) for the image used for the card headers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +198,3 @@ I would like to thank Microverse for the opportunity to learn and grow
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Attribution:
-company card header:
-Image by <a href="https://pixabay.com/users/zzzvector-244319/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4052951">zzzvector</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4052951">Pixabay</a>
