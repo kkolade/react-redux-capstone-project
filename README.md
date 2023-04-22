@@ -71,7 +71,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live demo link will be made available as soon as it is available]()
+<!-- VIDEO DEMO -->
+
+## Video Demo <a name="live-demo"></a>
+
+- [Video Demo](https://www.loom.com/share/9462864c11dc409f8b24795f5eddd6dc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
