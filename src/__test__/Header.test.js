@@ -9,7 +9,7 @@ describe('Header component', () => {
     const { getByText, getByRole } = render(
       <Router>
         <Header />
-      </Router>
+      </Router>,
     );
     expect(getByText('SPRINTPLEX')).toBeInTheDocument();
     expect(getByText('100%')).toBeInTheDocument();
