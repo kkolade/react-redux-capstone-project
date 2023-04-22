@@ -71,6 +71,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Live Demo](https://company-details.onrender.com/)
+
 <!-- VIDEO DEMO -->
 
 ## Video Demo <a name="live-demo"></a>

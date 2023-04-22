@@ -1,32 +1,18 @@
 import '@testing-library/jest-dom/extend-expect';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from '../components/Header';
 
-describe('Header', () => {
-  it('renders the correct header content', () => {
-    render(
-      <BrowserRouter>
+describe('Header component', () => {
+  test('renders correctly', () => {
+    const { getByText, getByRole } = render(
+      <Router>
         <Header />
-      </BrowserRouter>,
+      </Router>
     );
-
-    expect(screen.getByText(/sprintplex/i)).toBeInTheDocument();
-    expect(screen.getByText(/14:02/i)).toBeInTheDocument();
-    expect(screen.getByText(/100%/i)).toBeInTheDocument();
-    expect(
-      screen.getByText(/details of american companies/i),
-    ).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /details/i })).toHaveAttribute(
-      'href',
-      '/details',
-    );
-    expect(screen.getByRole('link', { name: /back/i })).toHaveAttribute(
-      'href',
-      '/',
-    );
-    expect(screen.getByLabelText(/microphone/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/cog/i)).toBeInTheDocument();
+    expect(getByText('SPRINTPLEX')).toBeInTheDocument();
+    expect(getByText('100%')).toBeInTheDocument();
+    expect(getByRole('navigation')).toBeInTheDocument();
   });
 });

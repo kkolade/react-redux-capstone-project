@@ -4,7 +4,7 @@ import React from 'react';
 import HomePageItems from '../components/HomePageItems';
 
 describe('HomePageItems', () => {
-  it('renders the name and symbol props correctly', () => {
+  test('renders the name and symbol props correctly', () => {
     const name = 'Test Company';
     const symbol = 'TC';
 
