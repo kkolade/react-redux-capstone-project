@@ -1,0 +1,25 @@
+.Details {
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.Details-company-logo {
+  height: 80px;
+  display: inline-block;
+  margin: 5px auto;
+}
+
+.Details-card-content {
+  height: 450px;
+}
+
+.Details h2 {
+  padding-bottom: 10px;
+}
+
+.Details th,
+.Details tr {
+  text-align: left;
+}

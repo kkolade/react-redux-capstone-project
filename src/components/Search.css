@@ -1,0 +1,14 @@
+.Search {
+  height: 30px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9b66b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Search-input {
+  width: 200px;
+}

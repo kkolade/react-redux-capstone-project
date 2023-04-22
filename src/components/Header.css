@@ -1,0 +1,59 @@
+.Header {
+  /* margin: 0 auto;
+  padding-top: 80px;
+  width: 293px;
+  ; */
+}
+
+.Header-navbar {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 3px;
+  padding-bottom: 6px;
+}
+
+.Header-top-nav {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-top-nav .text {
+  font-size: 0.9rem;
+}
+
+.Header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12px;
+}
+
+.Header h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.Header-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.Header-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Header-chevron {
+  font-size: 2rem;
+}
+
+.Header-title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
