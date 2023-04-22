@@ -35,6 +35,9 @@ const Home = () => {
           })
           .map((company) => (
             <div
+              role="button"
+              tabIndex={0}
+              aria-hidden="true"
               className="Home-card-container"
               key={company.id}
               onClick={() => navigate(`/details/${company.symbol}`)}
